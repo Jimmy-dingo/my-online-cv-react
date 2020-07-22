@@ -36,3 +36,82 @@
     transform: rotate(360deg);
   }
 }
+
+/********************************** Root Styling *************************************** */
+
+:root {
+  font-size: 10px;
+  font-family: "Merriweather", serif;
+  --key-color: #5a9345;
+  --key-adjacent: #346f62;
+  --background-color: #f1f5f4;
+  --key-gray: #222222;
+  --font-gray: #333333;
+  --gradient-key: linear-gradient(24deg, rgba(53,92,38,1) 0%, rgba(106,179,80,1) 100%);
+}
+
+body {
+  font-size: 1.8rem;
+  color: var(--font-gray);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: var(--font-gray);
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: var(--font-gray);
+}
+
+h3 {
+  font-size: 2rem;
+  color: var(--font-gray);
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.1rem;
+  padding: 1.6rem;
+  color: var(--font-gray);
+}
+
+button > img {
+  width: 1rem;
+  height: auto;
+}
+
+main{
+  margin-right: 0;
+}
+
+/**************************************** Section title Styling ***************************************** */
+.section-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title + div {
+  /*Set the margin space under all the section titles*/
+  margin-top: 3rem;
+}
+
+.section-title h1 {
+  font-size: 4rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--key-color);
+  text-align: center;
+}
+
+.section-title h2 {
+  margin-top: 0.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+/***************************************************/

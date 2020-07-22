@@ -1,0 +1,132 @@
+.my-online-cv {
+  position: relative;
+  top: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.section-title {
+  margin: 0 -126px 0 -126px;
+  /* background: rgb(82,82,82);
+  background: linear-gradient(36deg, rgba(82,82,82,0.03995101458552175) 0%, rgba(51,51,51,0.7598389697675946) 100%); */
+  padding: 5vh 0 5vh 0;
+}
+
+.content-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: -15px;
+}
+
+.content-type > h2 {
+  font-size: 3rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--key-color);
+}
+
+/*skill set style*/
+section{
+  margin-bottom: 10vh;
+}
+
+.skills-subcat{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 1%;
+    margin-bottom: 2vh;
+    background-color: rgb(248, 248, 248);
+}
+
+.skills-subcat h2{
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+.skill-set div{
+    margin-bottom: 3rem;
+}
+
+.skill-set img{
+    width: 4rem;
+    height: auto;
+}
+
+.experience {
+  padding: 2%;
+  margin-bottom: 2vh;
+  background-color: rgb(248, 248, 248);
+}
+
+.experience-title > h2 {
+  font-weight: 700;
+}
+
+.experience-title > h3 {
+  font-weight: 400;
+}
+
+.experience-title > img{
+    width: 16rem;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.experience-body {
+  margin-top: 2rem;
+}
+
+.experience-body > h3 {
+  font-weight: 600;
+}
+
+.experience-body > p {
+  text-align: justify;
+}
+
+.experience .location img {
+  height: 4rem;
+  width: auto;
+}
+
+/* .cv-content div:first-child hr {
+      margin-left: 0;
+      background-color: var(--key-color);
+      height: 2px;
+      width: 4rem;
+  } */
+
+/**************************************** Online Cv mobile ***************************************** */
+
+@media only screen and (max-width: 768px) {
+  .my-online-cv {
+    position: relative;
+    top: 12vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 3px solid var(--key-color);
+    z-index: 1;
+    background-color: white;
+
+    
+  }
+}
+@media only screen and (max-width: 540px) {
+    .skill-set div{
+        margin-bottom: 3rem;
+    }
+}
