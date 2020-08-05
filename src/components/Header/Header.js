@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './Header.css';
-import Navigation from './Navigation';
 
 const Header = function() {
     const [showMenu, setShowMenu] = useState(false);

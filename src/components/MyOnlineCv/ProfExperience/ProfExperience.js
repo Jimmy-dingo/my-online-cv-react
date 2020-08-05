@@ -6,7 +6,6 @@ const ProfExperience = () => {
 
                             <div className="content-type">
                                 <h2>Professional Experience</h2>
-                                <hr />
                             </div>
 
                             <div className="experience row">

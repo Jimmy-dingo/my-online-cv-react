@@ -6,10 +6,9 @@ const Languages = () => {
 
             <div className="content-type">
                 <h2>Languages</h2>
-                <hr />
             </div>
 
-            <div className="skill-set row">
+            <div className="skill-set-lang row">
 
                 <div className="col-3">
                     <h3>Italian</h3>

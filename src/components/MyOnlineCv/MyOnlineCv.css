@@ -9,9 +9,7 @@
 }
 
 .section-title {
-  /* background: rgb(82,82,82);
-  background: linear-gradient(36deg, rgba(82,82,82,0.03995101458552175) 0%, rgba(51,51,51,0.7598389697675946) 100%); */
-  padding: 5vh 0 5vh 0; 
+  padding: 20px;
 }
 
 .content-type {
@@ -19,8 +17,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding: 10px 10px 25px 0;
   margin-left: -15px;
 }
 
@@ -30,28 +27,30 @@
   border-bottom: 2px solid var(--key-color);
 }
 
-section{
+section {
   margin-bottom: 10vh;
 }
 
 .experience {
   padding: 2%;
-  margin-bottom: 2vh;
+  margin-bottom: 10px;
   background-color: rgb(248, 248, 248);
 }
 
 .experience-title > h2 {
   font-weight: 700;
+  text-align: center;
 }
 
 .experience-title > h3 {
   font-weight: 400;
+  text-align: center;
 }
 
-.experience-title > img{
-    width: 16rem;
-    height: auto;
-    margin-top: 1rem;
+.experience-title > img {
+  width: 160px;
+  height: auto;
+  margin: 10px 25% 10px 25%;
 }
 
 .experience-body {
@@ -71,25 +70,54 @@ section{
   width: auto;
 }
 
+.skill-set-lang div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /**************************************** Online Cv mobile ***************************************** */
 
 @media only screen and (max-width: 768px) {
   .my-online-cv {
     position: relative;
-    top: 17vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
     background-color: white;
   }
 }
 
 @media only screen and (max-width: 540px) {
-    .experience{
-      display: flex;
-      flex-direction: column;
-      margin-left: -15px;
-    }
+  .experience {
+    display: flex;
+    flex-direction: column;
+    margin-left: -15px;
+  }
+
+  .experience-title{
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .experience-title h2{
+    text-align: center;
+  }
+
+  .experience-body h3{
+    text-align: center;
+  }
+  .skill-set-lang{
+    width: 370px;
+    margin-left: -30px !important;
+    padding-bottom: 20px;
+  }
+
+  .skill-set-lang p {
+    padding: 0 0 10px 0;
+  }
 }

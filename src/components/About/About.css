@@ -1,52 +1,52 @@
 /**************************************** Headline Styling ***************************************** */
 
 .headline {
-    background-image: url(/assets/images/desktop-background-head-2.jpg);
-    filter: grayscale(40%) brightness(80%);
-    background-position: center;
-    width: 100vw;
-    height: 88.8vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-left: -15px;
-    border-bottom: 3px solid var(--key-color);
-  }
-  
-  .headline h1 {
-    color: white;
-    font-size: 6rem;
-    font-weight: 700;
-    text-shadow: 0px 0px 10px rgb(92, 92, 92);
-  }
-  
-  .headline h2 {
-    color: white;
-    font-size: 5rem;
-    font-weight: 300;
-    text-shadow: 0px 0px 10px rgb(92, 92, 92);
-  }
-  
-  .headline h2 span {
-    color: var(--key-color);
-    font-weight: 600;
-  }
-  
-  /**************************************** About me section Styling ***************************************** */
-  
-  .about-me {
-    /* display: flex;
+  background-image: url(/assets/images/desktop-background-head-2.jpg);
+  filter: grayscale(40%) brightness(80%);
+  background-position: center;
+  width: 100vw;
+  height: 638px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-left: -15px;
+  border-bottom: 3px solid var(--key-color);
+}
+
+.headline h1 {
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  text-shadow: 0px 0px 10px rgb(92, 92, 92);
+}
+
+.headline h2 {
+  color: white;
+  font-size: 5rem;
+  font-weight: 300;
+  text-shadow: 0px 0px 10px rgb(92, 92, 92);
+}
+
+.headline h2 span {
+  color: var(--key-color);
+  font-weight: 600;
+}
+
+/**************************************** About me section Styling ***************************************** */
+
+.about-me {
+  /* display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-    padding-top: 60px;
-    height: 100vh;
-    z-index: 1;
-  }
-  
-  /* .about-me > button {
+  padding-top: 60px;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* .about-me > button {
     position: absolute;
     top: -3.1rem;
     right: 2rem;
@@ -67,41 +67,34 @@
     width: 1.5rem;
     height: auto;
   } */
-  
-  [alt="my-personal-photo"] {
-    width: 20rem;
-    height: auto;
-    border-radius: 50%;
-    border: 0.5rem solid gray;
-  }
-  
-  .about-me figure {
-    padding: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .about-me p {
-    text-align: justify;
-  }
-  
-  @media only screen and (max-width: 768px) {
-    /* .headline {
-      position: relative;
-      top: 17vh;
-      height: 82vh;
-      margin-bottom: 0;
-   } */
-   
-   .headline h1 {
+
+[alt="my-personal-photo"] {
+  width: 20rem;
+  height: auto;
+  border-radius: 50%;
+  border: 0.5rem solid gray;
+}
+
+.about-me figure {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me p {
+  text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+  .headline h1 {
     color: white;
     font-size: 5rem;
     font-weight: 700;
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
   }
-  
+
   .headline h2 {
     color: white;
     font-size: 4.2rem;
@@ -109,39 +102,36 @@
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
   }
 
-    .about-me {
-      /* position: relative;
-      top:17vh; */
-      height: 70vh;
-      /* margin-top:0; */
-      /* padding-top:27vh; */
-    }
-   }
-
-  @media only screen and (max-width: 540px) {
-    /* .headline {
-      height: 100vh;
-   } */
-
-   .about-me {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    padding-top: 20px;
-    height: 70vh;
+  .about-me {
+    padding-top: 0;
+    height: 800px;
   }
-   .headline h1 {
+}
+
+@media only screen and (max-width: 540px) {
+  .headline {
+    height: 655px;
+  }
+
+  .headline h1 {
+    text-align: center;
     color: white;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 700;
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
   }
-  
+
   .headline h2 {
     color: white;
-    font-size: 5rem;
+    font-size: 3.4rem;
     font-weight: 300;
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
   }
-   }
+
+  .credits{
+    padding: 15px;
+  }
+  .credits p {
+    text-align: center;
+  }
+}

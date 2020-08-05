@@ -9,7 +9,6 @@ const Skills = () => {
 
                             <div className="content-type">
                                 <h2>Skills & Abilities</h2>
-                                <hr />
                             </div>
 
                             <div className="skills-subcat">
