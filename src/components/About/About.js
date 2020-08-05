@@ -17,13 +17,13 @@ const About = () => {
 
             </section>
             
-            <section className="about-me container-fluid">
+            <section className="about-me">
                                 
                 <div className="container">
                     
                     <div className="section-title">
                         <h1>About Me</h1>
-                        <h2>I am a creative WebDesigner and Developer</h2>
+                        <h2>A couple of words about me</h2>
                     </div>
                     
                     <div className="row">

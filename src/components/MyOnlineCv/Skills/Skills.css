@@ -1,0 +1,49 @@
+/*skill set style*/
+  
+  .skills-section{
+    margin-right: -15px;
+  }
+  
+  .skill-set> div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .of3{
+    margin: 0 15px 0 15px;
+  }
+  
+  .skills-subcat{
+      display: flex;
+      flex-direction: column;
+      margin-left: -15px;
+      padding: 2%;
+      margin-bottom: 2vh;
+      background-color: rgb(248, 248, 248);
+  }
+  
+  .skills-subcat h2{
+      text-align: left;
+      margin-bottom: 3rem;
+      font-size: 2.5rem;
+  }
+  
+  .skill-set div{
+      margin-bottom: 3rem;
+  }
+  
+  .skill-set img{
+      width: 4rem;
+      height: auto;
+  }
+
+  @media only screen and (max-width: 540px) {
+    .skill-set > div{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+}
