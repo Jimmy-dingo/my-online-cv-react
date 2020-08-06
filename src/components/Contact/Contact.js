@@ -1,4 +1,5 @@
 import React from 'react';
+import Form from './Form';
 import './Contact.css';
 
 const Contact = () => {
@@ -39,22 +40,7 @@ const Contact = () => {
                 </div>
                 <div className="right-column col-md-4">
 
-                    <div className="form-cont container">
-
-                        <h3>Contact me<br />for more info</h3>
-                        <form className="form">
-                            <section className="form-in">
-
-                                <input type="text" className="form-fields" name="name" data-displayname="Name" placeholder="Your name" required />
-                                <input type="text" className="form-fields" name="surname" data-displayname="Surname" placeholder="Your surname" required />
-                                <input type="text" className="form-fields" name="number" data-displayname="Number" placeholder="Your phone number" required />
-                                <textarea className="form-fields" name="message" data-displayname="Message" placeholder="Leave a message" required />
-                                <button className="send-btn" type="submit">Send</button>
-
-                            </section>
-                        </form>
-
-                    </div>
+                    <Form />
 
                 </div>
             </div>
