@@ -3,15 +3,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   background-color: white;
-  height: 100vh;
-  width: 100vw;
   padding-left: 0;
 }
 
 .Contact .row {
-  height: 100vh;
+  height: 630px;
 }
 
 .left-column {
@@ -23,10 +20,6 @@
   justify-content: center;
   align-items: center;
 }
-
-/* .left-column div:nth-child(1) {
-  padding-top: 80px;
-} */
 
 .left-column h1 {
   text-shadow: 0px 0px 20px rgb(92, 92, 92);
@@ -69,7 +62,7 @@
   font-size: 3rem;
   font-weight: 800;
   text-align: center;
-  margin-bottom: 3vh;
+  margin-bottom: 25px;
 }
 
 .media-icons {
@@ -103,7 +96,6 @@
 
 .buttons-cont button:nth-child(1) {
   background-color: var(--key-secondary);
-  /* background-color: #456B9F; */
 }
 
 .buttons-cont button:nth-child(2) {
@@ -172,66 +164,20 @@ button {
 
 @media only screen and (max-width: 768px){
   .Contact {
-    /* position: relative;
-    top: 17vh;
-    left: 0; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    z-index: 1;
-    background-color: white;
-    width: 100vw;
-    /* margin-top: 17vh; */
   }
 
   .left-column div:nth-child(1) {
-    padding-top: 10vh;
-    height: 145vh;
+    padding-top: 80px;
   }
 
   .left-column {
-    height: 86vh;
+    height: 633px;
     width: 100vw;
-    margin-right: 6vh;
-    padding-bottom: 4vh;
-  }
-
-  .left-column h1 {
-    font-size: 4rem;
-  }
-  .left-column h2 {
-    font-size: 3.6rem;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .Contact {
-    /* position: relative;
-    top: 17vh;
-    left: 0; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    background-color: white;
-    padding-left: 0;
-    margin-right: 0;
-    /* margin-top: 17vh;
-    margin-bottom: 17vh; */
-  }
-
-  .left-column div:nth-child(1) {
-    padding-top: 10vh;
-    /* height: 150vh; */
-  }
-
-  .left-column {
-    height: 87vh;
-    width: 100vw;
-    margin-right: 15px;
-    padding-bottom: 4vh;
+    padding-bottom: 40px;
   }
 
   .left-column h1 {
@@ -242,6 +188,23 @@ button {
   }
 
   .right-column{
-    height: 86vh;
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .Contact {
+    margin-right: -5px;
+  }
+
+  .left-column {
+    height: 630px;
+  }
+
+  .left-column h1 {
+    font-size: 4rem;
+  }
+  .left-column h2 {
+    font-size: 3.6rem;
   }
 }

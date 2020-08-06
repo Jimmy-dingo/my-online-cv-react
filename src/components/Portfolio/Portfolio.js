@@ -9,10 +9,10 @@ const Portfolio = () => {
 
     useEffect(() => {
         const fetchProjects = () => {
-          setLoading(true);
+        //   setLoading(true);
           const projectList = projectsJSON;
           setProjects(projectList);
-          setLoading(false);
+        //   setLoading(false);
         }
         
         fetchProjects();
