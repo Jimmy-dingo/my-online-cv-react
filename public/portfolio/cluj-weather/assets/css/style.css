@@ -1,0 +1,89 @@
+body>div{
+    position: absolute;
+    top: 0; left:0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    filter: grayscale(40%) brightness(80%);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.616);
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+h1{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div:nth-child(3) h2{
+    font-size: 28px;
+}
+
+div:nth-child(3) p{
+    font-size: 30px;
+    text-align: center;
+}
+
+.temp-selector{
+    text-align: center;
+    font-size: 20px;
+}
+
+.temp-selector p{
+    font-size: 14px;
+}
+
+.temp-display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 900px;
+    margin-top: 50px;
+}
+
+.temp-display div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+}
+    
+.temperature { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.feels-like { 
+    grid-area: 1 / 2 / 2 / 3; 
+}
+
+.temp-min { 
+    grid-area: 1 / 3 / 2 / 4; 
+}
+
+.temp-max { 
+    grid-area: 2 / 1 / 3 / 2; 
+}
+
+.humidity { 
+    grid-area: 2 / 2 / 3 / 3; 
+}
+
+.pressure { 
+    grid-area: 2 / 3 / 3 / 4; 
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather in Cluj-Napoca</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../backButton.css">
+</head>
+<body>
+    <div>
+        
+        <div class="container">
+            <h1>Weather in Cluj-Napoca</h1>
+
+            <div class="temp-selector">
+                <form action="">
+                    <label for="units">Choose a temperature unit:</label>
+                    <select name="units">
+                        <option value="farenheit">Farenheit</option>
+                        <option value="celsius">Celsius</option>
+                    </select>
+                    <input type="submit">
+                </form>
+                <p>The chosen unit will be saved for the next usage. Unless you change it!</p>
+            </div>
+
+            <div class="temp-display">
+
+                <div class="temperature">
+                    <h2>Temperature</h2>
+                    <p><span>0</span>°</p>
+                </div>
+                
+                <div class="feels-like">
+                    <h2>Feeling</h2>
+                    <p><span>0</span>°</p>
+                </div>
+                
+                <div class="temp-min">
+                    <h2>Minimum</h2>
+                    <p><span>0</span>°</p>
+                </div>
+                
+                <div class="temp-max">
+                    <h2>Maximum</h2>
+                    <p><span>0</span>°</p>
+                </div>
+                
+                <div class="humidity">
+                    <h2>Humidity</h2>
+                    <p><span>0</span>%</p>
+                </div>
+                
+                <div class="pressure">
+                    <h2>Pressure</h2>
+                    <p><span>0</span>hPa</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <button class="back-btn"><p>Back to Portfolio</p></button>
+    <script src="./assets/js/main.js"></script>
+    <script src="../backButton.js"></script>
+</body>
+</html>

@@ -138,9 +138,3 @@ function doItAgain(){
 clickButton.addEventListener('click', doItAgain);
 
 
-//*Back Button*//
-const goBack = ()=> window.history.back();
-
-const backBtn = document.querySelector('.back-btn');
-backBtn.addEventListener('click', goBack);
-
