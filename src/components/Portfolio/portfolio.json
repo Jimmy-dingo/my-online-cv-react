@@ -1,5 +1,6 @@
 [
       {
+        "id": "rps",
         "name": "Rock paper and scissors",
         "description": "The classic rock paper and scissors game made with pure HTML CSS and JS",
         "keywords": ["HTML", "CSS", "Javascript"],
@@ -10,6 +11,7 @@
         "type": "Game"
       },
       {
+        "id": "tic-tac-toe",
         "name": "Tic Tac Toe",
         "description": "Old but gold. The famous tic tac toe game made with React",
         "keywords": ["HTML", "CSS", "Javascript", "React"],
@@ -20,6 +22,7 @@
         "type": "Game"
       },
       {
+        "id": "cluj-weather",
         "name": "Weather in Cluj-Napoca",
         "description": "A Wheather page dedicated to Cluj-Napoca, using a real API and AJAX to fetch the info, storing locally and in Cookies the preferences. It shows real-time wheather",
         "keywords": ["HTML", "CSS", "Javascript", "API", "AJAX"],
@@ -30,6 +33,7 @@
         "type": "Wheather Page"
       },
       {
+        "id": "comment-list",
         "name": "Comment list page",
         "description": "A comment list page, using AJAX fetch with HTTP requests to GET and POST",
         "keywords": ["HTML", "CSS", "Javascript", "AJAX"],
@@ -40,6 +44,7 @@
         "type": "JS Comment List"
       },
       {
+        "id": "drum-kit",
         "name": "Drum Kit",
         "description": "Drum Kit made using keycode and DOM Manipulation with Vanilla JavaScript to interact with it using the keyboard!",
         "keywords": ["HTML", "CSS", "Javascript"],
@@ -50,6 +55,7 @@
         "type": "Interactive Page"
       },
       {
+        "id": "jsclock",
         "name": "JSClock",
         "description": "Real-time vintage clock. Using Vanilla JavaScript",
         "keywords": ["HTML", "CSS", "Javascript"],
@@ -60,6 +66,7 @@
         "type": "JS Clock"
       },
       {
+        "id": "employee-list",
         "name": "Employee List",
         "description": "Employee list app fetching online API using Async JS to GET and POST HTML requests",
         "keywords": ["HTML", "CSS", "Javascript"],

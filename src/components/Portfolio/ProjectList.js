@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Project = ({ projects }) => {
+const ProjectList = ({ projects }) => {
     const project = projects.map(project => {
         console.log(project.name)
 
@@ -24,7 +25,8 @@ const Project = ({ projects }) => {
 
         return (
             <article className="portfolio-article col-sm-6 col-md-6 col-lg-4 mb-5">
-                <a href="portfolio-single.html" className="portfolio-item"><img src={project.image} alt="Image" className="img-fluid" /></a>
+                {/* <Link to={`/portfolio/${project.id}/`} className="portfolio-item"><img src={project.image} alt="Image" className="img-fluid" /></Link> */}
+                <a href={`/portfolio/${project.id}/`} className="portfolio-item"><img src={project.image} alt="Image" className="img-fluid" /></a>
                 <div className="proj-details">
                     <h3>{project.name}</h3>
                     <p>{project.description}</p>
@@ -44,4 +46,4 @@ const Project = ({ projects }) => {
     )
 }
 
-export default Project;
+export default ProjectList;

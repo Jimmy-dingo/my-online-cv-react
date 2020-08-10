@@ -1,18 +1,19 @@
 import React, {useState, useEffect} from 'react';
 import './Portfolio.css';
-import Project from './Project';
+import ProjectList from './ProjectList';
 import projectsJSON from './portfolio.json';
+import LoadingPage from './LoadingPage';
 
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
-    // const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         const fetchProjects = () => {
-        //   setLoading(true);
+          setLoading(true);
           const projectList = projectsJSON;
           setProjects(projectList);
-        //   setLoading(false);
+          setLoading(false);
         }
         
         fetchProjects();
@@ -29,7 +30,8 @@ const Portfolio = () => {
 
                     <div class="row mb-4">
 
-                       <Project projects={projects}/>
+                       <LoadingPage isLoading={loading} />
+                       <ProjectList projects={projects}/>
 
                     </div>
                 </div>
