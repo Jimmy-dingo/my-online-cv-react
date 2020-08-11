@@ -1,18 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import * as emailjs from 'emailjs-com';
 
 const Form = () => {
+    const [showModal, setShowModal] = useState(false);
+
+    const modalSubmission =
+        <div className={`${showModal ? "modal-submission" : "hide"}`}>
+            <img src="/assets/icons/icon-menu-close.png" onClick={() => setShowModal(!showModal)} />
+            <h2>Thank you for contacting me!</h2>
+            <p>I will answer to you request as soon as possible</p>
+            <img src="/assets/icons/smile.svg" />
+        </div>;
 
     function sendEmail(e) {
         e.preventDefault();
-    
+
         emailjs.sendForm('gmail', 'contact_form_online_cv', e.target, 'user_2T9WPUe3YgnTsCCgGGdYp')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      }
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    }
 
     return (
         <div className="form-cont container">
@@ -26,10 +35,12 @@ const Form = () => {
                     <input type="text" className="form-fields" name="number" data-displayname="Number" placeholder="Your phone number" required />
                     <input type="text" className="form-fields" name="email" data-displayname="Email" placeholder="Your email address" required />
                     <textarea className="form-fields" name="message" data-displayname="Message" placeholder="Leave a message" required />
-                    <button className="send-btn" type="submit" value="Send">Send</button>
+                    <button className="send-btn" type="submit" value="Send" onClick={() => setShowModal(!showModal)}>Send</button>
 
                 </section>
             </form>
+
+            {modalSubmission}
 
         </div>
     )
