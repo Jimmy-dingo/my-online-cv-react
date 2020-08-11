@@ -27,11 +27,35 @@
   font-size: 5rem;
   font-weight: 300;
   text-shadow: 0px 0px 10px rgb(92, 92, 92);
+  padding-bottom: 20px;
 }
 
 .headline h2 span {
   color: var(--key-color);
   font-weight: 600;
+}
+
+.headline div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+}
+.headline button:nth-child(1) {
+  background-color: var(--key-color);
+}
+
+.headline button:nth-child(2) {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.headline button:nth-child(1):hover {
+  border: 2px solid white;
+}
+
+.headline button:nth-child(2):hover {
+  background-color: rgba(255, 255, 255, 0.089);
 }
 
 /**************************************** About me section Styling ***************************************** */
@@ -83,7 +107,7 @@
 
 @media only screen and (max-width: 540px) {
   .headline {
-    height: 655px;
+    height: 670px;
   }
 
   .headline h1 {
@@ -99,6 +123,17 @@
     font-size: 3.4rem;
     font-weight: 300;
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
+  }
+
+  .headline div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
+  }
+
+  .headline button {
+    width: 140px;
   }
 
   .credits {
