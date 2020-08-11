@@ -21,8 +21,8 @@ const Contact = () => {
 
                     <div class="buttons-cont container">
 
-                        <button>About me</button>
-                        <button>My Resumee</button>
+                        <button onClick={()=> window.location.href="/"}>About me</button>
+                        <button onClick={()=> window.location.href="/my-online-cv"}>My Resumee</button>
 
                     </div>
 
