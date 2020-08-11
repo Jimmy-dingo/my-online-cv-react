@@ -1,5 +1,6 @@
 /****************************************** Menu Styling ***************************************** */
 .Header {
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -81,6 +82,30 @@
   display: none;
 }
 
+/*Laser pointer animation*/
+
+.laser-pointer{
+  position: absolute;
+  bottom:0; left:0;
+  margin-bottom: -6px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  z-index: 1005;
+  background-color: var(--key-color);
+  animation: moveit 10s linear infinite;
+}
+
+@keyframes moveit {
+  0%,
+  100% {
+    left: 0;
+  }
+
+  50% {
+    left: 100%;
+  }
+}
 
 /************ Mobile menu ************/
 
@@ -143,6 +168,21 @@
     text-decoration: none;
     transition: 0.3s ease;
     margin: 2vw;
+  }
+
+  .laser-pointer{
+    animation: moveit 5s linear infinite;
+  }
+  
+  @keyframes moveit {
+    0%,
+    100% {
+      left: 0;
+    }
+  
+    50% {
+      left: 98%;
+    }
   }
 }
 

@@ -1,11 +1,11 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './Header.css';
 
 const Header = function () {
     const closedIcon = '/assets/icons/icon-menu-close.png';
     const openedIcon = '/assets/icons/hamburger-icon-menu-closed.png';
     const [showMenu, setShowMenu] = useState(false);
-    // const toggleIcon = useRef(null);
+
     let hamburger;
     let mobileMenu;
 
@@ -23,37 +23,12 @@ const Header = function () {
                 <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia" src="/assets/icons/linked-in.png" alt="linkedIn-icon" /></a>
                 <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia" src="/assets/icons/gitHub.png" alt="gitHub-icon" /></a>
             </div>
-
+            
+            <div className="laser-pointer"></div>
         </nav>
     )
-
-    
-    // let iconCurrentOpacity = 0;
-    
-    // const toggleAnimation = (icon)=>{
-    //     const iconStyle = icon.current.style;
-    //     console.log('after 3000');
-
-    //     // iconStyle.display = 'block';
-
-        
-    //     iconStyle.opacity = '100%';
-    //     // // iconStyle.transition = 'all .5s';
-        
-    //     // // if(iconStyle.opacity === ''){
-    //     // // }
-
-    //     // console.log(icon.current.style.opacity);
-        
-    // }
     
     if (showMenu) {
-        // toggleIcon.current.focus();
-        // console.log('first')
-        // toggleIcon.current.style.opacity = '1%';
-        // toggleIcon.current.style.transition = 'opacity .5s';
-        // setTimeout(toggleAnimation(toggleIcon), 30000); 
-        {/*ref={toggleIcon}*/}
         hamburger = closedIcon;
         mobileMenu = mobileNav;
     }
@@ -90,6 +65,7 @@ const Header = function () {
                     {mobileMenu}
                 </div>
 
+                <div className="laser-pointer"></div>
             </header>
         </>
     )
