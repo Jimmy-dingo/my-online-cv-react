@@ -1,0 +1,241 @@
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: lightgrey;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #464646;
+}
+
+.container {
+  background: white;
+  width: 900px;
+  margin: 100px auto;
+  border-radius: 10px;
+  border: 1px solid grey;
+  padding: 10px;
+  z-index: 1;
+}
+
+.agenda {
+  list-style: none;
+  margin: 10px;
+}
+
+.agenda .employee {
+  background-color: lightblue;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.employee .name {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.employee .remove {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: red;
+}
+
+.remove:hover {
+  cursor: pointer;
+}
+
+/* Input stylyng*/
+
+form {
+  margin: 120px 10px 30px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}
+form div{
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+}
+form div span{
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333333;
+}
+form div input{
+  width: 220px;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid rgb(133, 133, 133);
+  border-radius: 5px;
+}
+[type="submit"]{
+  color: white;
+  font-size: 2.3rem;
+  background-color: #fd7d82;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: none;
+}
+
+/* Loading screen styling */
+
+.loading-screen{
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 140%;
+  background-color: rgba(0, 0, 0, 0.089);
+  backdrop-filter: opacity(50%);
+  display: none;
+}
+
+/* Loading animation */
+
+.bubblingG {
+	text-align: center;
+	width:78px;
+	height:49px;
+	margin: 450px auto;
+}
+
+.bubblingG span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	margin: 24px auto;
+	background: rgb(253,125,130);
+	border-radius: 49px;
+		-o-border-radius: 49px;
+		-ms-border-radius: 49px;
+		-webkit-border-radius: 49px;
+		-moz-border-radius: 49px;
+	animation: bubblingG 1.5s infinite alternate;
+		-o-animation: bubblingG 1.5s infinite alternate;
+		-ms-animation: bubblingG 1.5s infinite alternate;
+		-webkit-animation: bubblingG 1.5s infinite alternate;
+		-moz-animation: bubblingG 1.5s infinite alternate;
+}
+
+#bubblingG_1 {
+	animation-delay: 0s;
+		-o-animation-delay: 0s;
+		-ms-animation-delay: 0s;
+		-webkit-animation-delay: 0s;
+		-moz-animation-delay: 0s;
+}
+
+#bubblingG_2 {
+	animation-delay: 0.45s;
+		-o-animation-delay: 0.45s;
+		-ms-animation-delay: 0.45s;
+		-webkit-animation-delay: 0.45s;
+		-moz-animation-delay: 0.45s;
+}
+
+#bubblingG_3 {
+	animation-delay: 0.9s;
+		-o-animation-delay: 0.9s;
+		-ms-animation-delay: 0.9s;
+		-webkit-animation-delay: 0.9s;
+		-moz-animation-delay: 0.9s;
+}
+
+
+
+@keyframes bubblingG {
+	0% {
+		width: 10px;
+		height: 10px;
+		background-color:rgba(253,125,130,0.54);
+		transform: translateY(0);
+	}
+
+	100% {
+		width: 23px;
+		height: 23px;
+		background-color:rgb(255,255,255);
+		transform: translateY(-20px);
+	}
+}
+
+@-o-keyframes bubblingG {
+	0% {
+		width: 10px;
+		height: 10px;
+		background-color:rgba(253,125,130,0.54);
+		-o-transform: translateY(0);
+	}
+
+	100% {
+		width: 23px;
+		height: 23px;
+		background-color:rgb(255,255,255);
+		-o-transform: translateY(-20px);
+	}
+}
+
+@-ms-keyframes bubblingG {
+	0% {
+		width: 10px;
+		height: 10px;
+		background-color:rgba(253,125,130,0.54);
+		-ms-transform: translateY(0);
+	}
+
+	100% {
+		width: 23px;
+		height: 23px;
+		background-color:rgb(255,255,255);
+		-ms-transform: translateY(-20px);
+	}
+}
+
+@-webkit-keyframes bubblingG {
+	0% {
+		width: 10px;
+		height: 10px;
+		background-color:rgba(253,125,130,0.54);
+		-webkit-transform: translateY(0);
+	}
+
+	100% {
+		width: 23px;
+		height: 23px;
+		background-color:rgb(255,255,255);
+		-webkit-transform: translateY(-20px);
+	}
+}
+
+@-moz-keyframes bubblingG {
+	0% {
+		width: 10px;
+		height: 10px;
+		background-color:rgba(253,125,130,0.54);
+		-moz-transform: translateY(0);
+	}
+
+	100% {
+		width: 23px;
+		height: 23px;
+		background-color:rgb(255,255,255);
+		-moz-transform: translateY(-20px);
+	}
+}
