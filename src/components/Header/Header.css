@@ -5,7 +5,7 @@
   flex-direction: row;
   justify-content: space-between;
   width: 100vw;
-  height: 80px;
+  height: 65px;
   font-size: .8em;
   background-color: #222;
   background-image: linear-gradient(25deg, transparent 65%, #5a93454b, transparent 70%), linear-gradient(-25deg, transparent 65%, #5a93454b, transparent 70%);
@@ -15,7 +15,6 @@
 }
 
 .main-nav-desktop {
-  margin-top: 20px;
   z-index: 1000;
 }
 
@@ -37,7 +36,7 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  margin-top: 0.3rem;
+  align-items: center;
 }
 
 .menu-pages {
@@ -45,37 +44,51 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  list-style-type: none;
 }
 
  .menu-pages a {
+  list-style-type: none;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
   font-size: 2rem;
   font-weight: 500;
   text-shadow: 0px 0px 2px rgb(92, 92, 92);
   color: #f9f9f9;
   text-decoration: none;
-  transition: 0.3s ease;
-  margin: 2vw;
+  margin: 20px;
+  padding-bottom: 5px;
 }
 
-.main-nav-desktop ul li a::after {
-  content:"";
-  width: 0%;
-  height: 3px;
-  background-color: var(--key-color);
+.main-nav-desktop .menu-pages a:before {
+  content: "";
   position: absolute;
-  top: 100%;  bottom: 0%; left: 50%; /*change position of the bottom bar*/
-  border-radius: 10%;
-  transition: all 500ms ease;
-}
-.main-nav-desktop ul li a:hover {
-  text-decoration: none;
-  color: #f9f9f9;
+  z-index: -1;
+  left: 51%;
+  right: 51%;
+  bottom: 0;
+  background: var(--key-color); /*Modify line color*/
+  height: 3px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
 }
 
-.main-nav-desktop ul li a:hover::after {
-  left: 0%;
-  width: 10%;
+.main-nav-desktop .menu-pages a:hover:before, .main-nav-desktop .menu-pages a:focus:before, .main-nav-desktop .menu-pages a:active:before {
+  left: 0;
+  right: 0;
+}
+
+.menu-pages a:hover{
+  color: #f9f9f9;
+  text-decoration: none;
 }
 
 .main-nav-toggle{

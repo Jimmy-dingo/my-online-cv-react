@@ -5,7 +5,7 @@
   filter: grayscale(40%) brightness(80%);
   background-position: center;
   width: 100vw;
-  height: 638px;
+  height: 653px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,42 +37,15 @@
 /**************************************** About me section Styling ***************************************** */
 
 .about-me {
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
   padding-top: 60px;
-  height: 100vh;
-  z-index: 1;
+  height: 653px;
 }
-
-/* .about-me > button {
-    position: absolute;
-    top: -3.1rem;
-    right: 2rem;
-    z-index: 3;
-    width: 14rem;
-    border: none;
-    border-top: 2px solid var(--key-color);
-    border-left: 2px solid var(--key-color);
-    border-right: 2px solid var(--key-color);
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    background-color: #f9f9f9;
-    color: var(--key-gray);
-    font-weight: 400;
-  }
-  
-  .about-me > button > img {
-    width: 1.5rem;
-    height: auto;
-  } */
 
 [alt="my-personal-photo"] {
   width: 20rem;
   height: auto;
   border-radius: 50%;
-  border: 0.5rem solid gray;
+  border: 3px solid var(--key-color);
 }
 
 .about-me figure {
@@ -128,7 +101,7 @@
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
   }
 
-  .credits{
+  .credits {
     padding: 15px;
   }
   .credits p {

@@ -13,6 +13,8 @@ const Footer = () => {
                 </div>
             </div>
 
+            <div className="laser-pointer-footer"></div>
+
         </footer>
     )
 };

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 
 const Header = function () {
@@ -23,11 +23,11 @@ const Header = function () {
                 <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia" src="/assets/icons/linked-in.png" alt="linkedIn-icon" /></a>
                 <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia" src="/assets/icons/gitHub.png" alt="gitHub-icon" /></a>
             </div>
-            
+
             <div className="laser-pointer"></div>
         </nav>
     )
-    
+
     if (showMenu) {
         hamburger = closedIcon;
         mobileMenu = mobileNav;
