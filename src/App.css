@@ -1,9 +1,8 @@
-
 /********************************** Root Styling *************************************** */
 
 :root {
   font-size: 10px;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   --key-color: #5a9345;
   --key-adjacent: #346f62;
   --key-secondary: #f2955c;
@@ -11,7 +10,11 @@
   --key-gray: #222222;
   --font-gray: #333333;
   --cards-background: rgb(248, 248, 248);
-  --gradient-key: linear-gradient(24deg, rgba(53,92,38,1) 0%, rgba(106,179,80,1) 100%);
+  --gradient-key: linear-gradient(
+    24deg,
+    rgba(53, 92, 38, 1) 0%,
+    rgba(106, 179, 80, 1) 100%
+  );
 }
 
 body {
@@ -44,7 +47,6 @@ p {
   color: var(--font-gray);
 }
 
-
 /**************************************** Section title Styling ***************************************** */
 .section-title {
   display: flex;
@@ -71,4 +73,12 @@ p {
   text-align: center;
 }
 
+main {
+  min-height: calc(100vh - 130px);
+}
+@media only screen and (max-width: 768px) {
+  main {
+    min-height: calc(100vh - 185px);
+  }
+}
 /***************************************************/
