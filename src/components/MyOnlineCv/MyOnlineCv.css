@@ -70,7 +70,7 @@ section {
   width: auto;
 }
 
-.skill-set-lang div{
+.skill-set-lang div {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,21 +97,22 @@ section {
     margin-left: -15px;
   }
 
-  .experience-title{
-    display: flex; 
+  .experience-title {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
-  .experience-title h2{
+  .experience-title h2 {
     text-align: center;
   }
 
-  .experience-body h3{
+  .experience-body h3 {
     text-align: center;
   }
-  .skill-set-lang{
+
+  .skill-set-lang {
     width: 370px;
     margin-left: -30px !important;
     padding-bottom: 20px;

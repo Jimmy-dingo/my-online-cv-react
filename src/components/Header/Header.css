@@ -153,6 +153,7 @@
   .animated-toggle-icon {
     animation: opachange 0.8s linear 1;
   }
+
   @keyframes opachange {
     0% {
       opacity: 0;
