@@ -1,5 +1,17 @@
 .container h3 {
-  font-size: 22px;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.container div:nth-child(1) p {
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+
+.divider {
+  border: 1px solid #008000;
 }
 
 article header {
@@ -26,21 +38,6 @@ article footer {
   margin-bottom: 20px;
 }
 
-[name="search"] {
-  width: 815px;
-  height: 22px;
-}
-
-button.search {
-  height: 28px;
-  border: none;
-  background-color: green;
-  color: white;
-  font-weight: 600;
-  padding: 6px 55px;
-  margin-left: 16px;
-}
-
 fieldset {
   border: none;
   padding-left: 0px;
@@ -49,7 +46,6 @@ fieldset {
 }
 
 .delete-btn {
-  margin-left: 900px;
   cursor: pointer;
   border: 1px solid black;
   background-color: transparent;
@@ -67,6 +63,15 @@ fieldset {
   color: green;
   font-weight: 600;
   cursor: pointer;
+}
+
+.like-btn span {
+  background-color: green;
+  color: white;
+  border-radius: 40%;
+  box-sizing: border-box;
+  padding: 2px 2px 2px 5px;
+  margin-right: 2px;
 }
 
 form {
