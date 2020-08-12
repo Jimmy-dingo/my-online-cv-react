@@ -8,8 +8,6 @@ import MyOnlineCv from './components/MyOnlineCv';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
-
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './reset.css';
@@ -18,28 +16,41 @@ import './App.css';
 function App() {
   return (
     <Router>
+
       <div className='App'>
+
         <Header className="Header" />
+
         <main className="container-fluid">
+
           <Switch>
+
             <Route exact path="/">
               <About />
             </Route>
+
             <Route exact path="/my-online-cv">
               <MyOnlineCv />
-            </Route> 
+            </Route>
+
             <Route exact path="/portfolio">
               <Portfolio />
-            </Route> 
+            </Route>
+
             <Route exact path="/contact">
               <Contact />
-            </Route> 
+            </Route>
+
           </Switch>
+
         </main>
+
         <Footer />
+
       </div>
+
     </Router>
   );
-}
+};
 
 export default App;

@@ -1,5 +1,4 @@
 /********************************** Root Styling *************************************** */
-
 :root {
   font-size: 10px;
   font-family: "Merriweather", serif;
@@ -56,7 +55,6 @@ p {
 }
 
 .section-title + div {
-  /*Set the margin space under all the section titles*/
   margin-top: 3rem;
 }
 

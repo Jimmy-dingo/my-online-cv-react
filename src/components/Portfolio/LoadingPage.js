@@ -1,23 +1,25 @@
 import React from 'react';
 import './LoadingPage.css';
 
-const LoadingPage = ({ isLoading }) => {
-    const page =
-        <div class="content">
-            <div class="loading">
-                <p>loading</p>
-                <span></span>
-            </div>
-        </div>;
+const LoadingPage = function ({ isLoading }) {
+  const page = (
+    <div class="content">
 
-    if (isLoading === true) {
-        return page
-    }
-    else {
-        return <></>
-    }
+      <div class="loading">
 
-    return page
-}
+        <p>loading</p>
+        <span></span>
+
+      </div>
+
+    </div>
+  );
+
+  if (!isLoading) {
+    return true
+  }
+
+  return page;
+};
 
 export default LoadingPage;
