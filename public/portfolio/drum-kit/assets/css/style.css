@@ -1,77 +1,77 @@
 :root {
-    font-size: 10px;
-    font-family: 'DM Mono', monospace;
+  font-size: 10px;
+  font-family: "DM Mono", monospace;
 }
 body {
-    background-image: url('../images/drums-2618153_1920.jpg');
-    background-color: aquamarine;
-    background: cover;
-    width: 100%;
-    height: 100%;
+  background-image: url("../images/drums-2618153_1920.jpg");
+  background-color: aquamarine;
+  background: cover;
+  width: 100%;
+  height: 100%;
 }
-.title{
-    margin-top: 50px;
-    text-align: center;
-    font-size: 3rem;
+.title {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 3rem;
 }
-.sub-title{
-    text-align: center;
-    font-size: 1.8rem;
-    line-height: 2rem;
-    font-weight: 300;
-    color: orange;
+.sub-title {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 300;
+  color: orange;
 }
 .hits {
-    display: flex;
-    flex-direction: row;
-    min-height: 100vh;
-    align-items: center;
-    justify-content: space-around;
-  }
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: space-around;
+}
 
 .hit {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 3px solid black;
-    transition: 0.1s;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.185);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 3px solid black;
+  transition: 0.1s;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.185);
 }
-.hit kbd{
-    font-size: 5rem;
+.hit kbd {
+  font-size: 5rem;
 }
 
-.hit span{
-    font-size: 1.5rem;
-    color: white;
+.hit span {
+  font-size: 1.5rem;
+  color: white;
 }
 
 /* Playing animation */
 
 .play {
-    transform: scale(1.1);
-    border-color: rgb(255, 166, 0);
-    box-shadow: 0 0 10px rgba(253, 173, 24, 0.692);
+  transform: scale(1.1);
+  border-color: rgb(255, 166, 0);
+  box-shadow: 0 0 10px rgba(253, 173, 24, 0.692);
 }
 
 /* Responsive design for phone */
 
 @media screen and (max-width: 992px) {
-    .hits {
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 50px;
-      }
-    .sub-title{
-        margin-top: 20px;
-    }
-    .hit{
-        margin-bottom: 15px;
-    }
+  .hits {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+  }
+  .sub-title {
+    margin-top: 20px;
+  }
+  .hit {
+    margin-bottom: 15px;
+  }
 }

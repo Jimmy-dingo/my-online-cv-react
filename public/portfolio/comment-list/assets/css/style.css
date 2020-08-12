@@ -1,4 +1,4 @@
-.container h3{
+.container h3 {
   font-size: 22px;
 }
 
@@ -18,9 +18,9 @@ article footer {
 }
 
 .comments {
-    margin-top: 50px;
+  margin-top: 50px;
 }
-  
+
 .comments article {
   border-bottom: 1px dotted black;
   margin-bottom: 20px;
@@ -41,7 +41,7 @@ button.search {
   margin-left: 16px;
 }
 
-fieldset{
+fieldset {
   border: none;
   padding-left: 0px;
   padding-right: 0px;
@@ -87,7 +87,7 @@ form textarea {
   height: 40px;
 }
 
-form div:nth-child(4){
+form div:nth-child(4) {
   margin-top: 10px;
   display: flex;
   flex-direction: row;

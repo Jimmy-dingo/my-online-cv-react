@@ -1,76 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drum kit with Vanilla JS</title>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style-reset.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="../backButton.css">
-
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style-reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="../backButton.css" />
+  </head>
+  <body>
     <h1 class="title">An HTML, CSS and JS drum kit!</h1>
     <h2 class="sub-title">Hit your key!</h2>
-<!-- Keyboard hits -->
+    <!-- Keyboard hits -->
     <div class="hits">
+      <div data-hit-code="65" class="hit">
+        <kbd>A</kbd>
+        <span class="sound">CIhat</span>
+      </div>
 
-        <div data-hit-code="65" class="hit">
-            <kbd>A</kbd>
-            <span class="sound">CIhat</span>
-        </div>
-        
-        <div data-hit-code="83" class="hit">
-            <kbd>S</kbd>
-            <span class="sound">Flam</span>
-        </div>
-        
-        <div data-hit-code="68" class="hit">
-            <kbd>D</kbd>
-            <span class="sound">Kick</span>
-        </div>
-        
-        <div data-hit-code="70" class="hit">
-            <kbd>F</kbd>
-            <span class="sound">OpHat1</span>
-        </div>
-        
-        <div data-hit-code="71" class="hit">
-            <kbd>G</kbd>
-            <span class="sound">OpHat2</span>
-        </div>
-        
-        <div data-hit-code="72" class="hit">
-            <kbd>H</kbd>
-            <span class="sound">PdHat</span>
-        </div>
-        
-        <div data-hit-code="74" class="hit">
-            <kbd>J</kbd>
-            <span class="sound">Rim</span>
-        </div>
-        
-        <div data-hit-code="75" class="hit">
-            <kbd>K</kbd>
-            <span class="sound">Snr</span>
-        </div>
-        
+      <div data-hit-code="83" class="hit">
+        <kbd>S</kbd>
+        <span class="sound">Flam</span>
+      </div>
+
+      <div data-hit-code="68" class="hit">
+        <kbd>D</kbd>
+        <span class="sound">Kick</span>
+      </div>
+
+      <div data-hit-code="70" class="hit">
+        <kbd>F</kbd>
+        <span class="sound">OpHat1</span>
+      </div>
+
+      <div data-hit-code="71" class="hit">
+        <kbd>G</kbd>
+        <span class="sound">OpHat2</span>
+      </div>
+
+      <div data-hit-code="72" class="hit">
+        <kbd>H</kbd>
+        <span class="sound">PdHat</span>
+      </div>
+
+      <div data-hit-code="74" class="hit">
+        <kbd>J</kbd>
+        <span class="sound">Rim</span>
+      </div>
+
+      <div data-hit-code="75" class="hit">
+        <kbd>K</kbd>
+        <span class="sound">Snr</span>
+      </div>
     </div>
 
     <button class="back-btn"><p>Back to Portfolio</p></button>
-    
-<!-- Hits relative audio tracks -->
-<audio data-hit-code="65" src="assets/audio/CYCdh_K1close_ClHat-04.wav"></audio>
-<audio data-hit-code="83" src="assets/audio/CYCdh_K1close_Flam-03.wav"></audio>
-<audio data-hit-code="68" src="assets/audio/CYCdh_K1close_Kick-04.wav"></audio>
-<audio data-hit-code="70" src="assets/audio/CYCdh_K1close_OpHat-04.wav"></audio>
-<audio data-hit-code="71" src="assets/audio/CYCdh_K1close_OpHat-06.wav"></audio>
-<audio data-hit-code="72" src="assets/audio/CYCdh_K1close_PdHat-02.wav"></audio>
-<audio data-hit-code="74" src="assets/audio/CYCdh_K1close_Rim-05.wav"></audio>
-<audio data-hit-code="75" src="assets/audio/CYCdh_K1close_Snr-03.wav"></audio>
 
-<script src="assets/js/script.js"></script>
-<script src="../backButton.js"></script>
-</body>
+    <!-- Hits relative audio tracks -->
+    <audio
+      data-hit-code="65"
+      src="assets/audio/CYCdh_K1close_ClHat-04.wav"
+    ></audio>
+    <audio
+      data-hit-code="83"
+      src="assets/audio/CYCdh_K1close_Flam-03.wav"
+    ></audio>
+    <audio
+      data-hit-code="68"
+      src="assets/audio/CYCdh_K1close_Kick-04.wav"
+    ></audio>
+    <audio
+      data-hit-code="70"
+      src="assets/audio/CYCdh_K1close_OpHat-04.wav"
+    ></audio>
+    <audio
+      data-hit-code="71"
+      src="assets/audio/CYCdh_K1close_OpHat-06.wav"
+    ></audio>
+    <audio
+      data-hit-code="72"
+      src="assets/audio/CYCdh_K1close_PdHat-02.wav"
+    ></audio>
+    <audio
+      data-hit-code="74"
+      src="assets/audio/CYCdh_K1close_Rim-05.wav"
+    ></audio>
+    <audio
+      data-hit-code="75"
+      src="assets/audio/CYCdh_K1close_Snr-03.wav"
+    ></audio>
+
+    <script src="assets/js/script.js"></script>
+    <script src="../backButton.js"></script>
+  </body>
 </html>
