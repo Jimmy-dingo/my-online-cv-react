@@ -7,10 +7,6 @@
   padding-left: 0;
 }
 
-.Contact .row {
-  height: 630px;
-}
-
 .left-column {
   background-image: url(/assets/images/office-932926_1280.jpg);
   background-position: center;
@@ -19,6 +15,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: calc(100vh - 130px);
+  box-sizing: border-box;
+  padding: 50px 15px 50px 15px;
 }
 
 .left-column h1 {
@@ -56,6 +55,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 
 .form-cont > h3 {
@@ -210,7 +210,6 @@ button {
   }
 
   .left-column {
-    height: 633px;
     width: 100vw;
     padding-bottom: 40px;
   }
