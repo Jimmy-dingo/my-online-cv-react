@@ -1,6 +1,7 @@
 import React from 'react';
 import './MyOnlineCv.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Skills from './Skills/index';
 import Education from './Education/Education';
 import ProfExperience from './ProfExperience/ProfExperience';

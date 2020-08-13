@@ -1,4 +1,6 @@
 import React from 'react';
+
+import myPhoto from './assets/images/about-me-photo.jpg';
 import './About.css';
 
 const About = function () {
@@ -23,16 +25,20 @@ const About = function () {
         <div className="container">
 
           <div className="section-title">
+
             <h1>About Me</h1>
             <h2>A couple of words about me</h2>
+
           </div>
 
           <div className="row">
 
             <div className="col-md-6">
+
               <figure>
-                <img src="assets/images/about-me-photo.jpg" alt="my-personal-photo" />
+                <img src={myPhoto} alt="my-personal-photo" />
               </figure>
+
             </div>
 
             <div className="about-me-description col-md-6">

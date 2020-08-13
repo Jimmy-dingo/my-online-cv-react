@@ -1,21 +1,26 @@
 import React from 'react';
 
+import HTML5Icon from './assets/icons/html5-brands.svg';
+import CSSIcon from './assets/icons/css3-alt-brands.svg';
+import JSIcon from './assets/icons/js-brands.svg';
+import reactIcon from './assets/icons/react-brands.svg';
+import gitHubIcon from './assets/icons/gitHub.png'
+
 const ProjectList = function ({ projects }) {
   const project = projects.map(project => {
-
     const usedTechImages = project.usedtech.map(tech => {
       if (tech === "HTML") {
-        return <img className="tech" src="/assets/icons/html5-brands.svg" alt="tech-icon" />
-      }
+        return <img className="tech" src={HTML5Icon} alt="tech-icon" />
+      };
       if (tech === "CSS") {
-        return <img className="tech" src="/assets/icons/css3-alt-brands.svg" alt="tech-icon" />
-      }
+        return <img className="tech" src={CSSIcon} alt="tech-icon" />
+      };
       if (tech === "Javascript") {
-        return <img className="tech" src="/assets/icons/js-brands.svg" alt="tech-icon" />
-      }
+        return <img className="tech" src={JSIcon} alt="tech-icon" />
+      };
       if (tech === "React") {
-        return <img className="tech" src="/assets/icons/react-brands.svg" alt="tech-icon" />
-      }
+        return <img className="tech" src={reactIcon} alt="tech-icon" />
+      };
     });
 
     return (
@@ -27,7 +32,7 @@ const ProjectList = function ({ projects }) {
 
           <h3>{project.name}</h3>
           <p>{project.description}</p>
-          <a href={project.url} target="_blank"><img className="icon-smedia" src="/assets/icons/gitHub.png" alt="gitHub-icon" /></a>
+          <a href={project.url} target="_blank"><img className="icon-smedia" src={gitHubIcon} alt="gitHub-icon" /></a>
           <p>Tecnologies used</p>
           <div className="used-tech">{usedTechImages}</div>
 

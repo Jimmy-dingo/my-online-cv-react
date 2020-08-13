@@ -1,5 +1,10 @@
 import React from 'react';
 
+import logoEnkindle from './assets/icons/logo-enkindle.png';
+import logoNeusoft from './assets/icons/neusoft-edc-logo.png';
+import logoSykes from './assets/icons/sykes-logo-sqblue.png';
+import locationMark from './assets/icons/location-mark.png';
+
 const ProfExperience = function () {
   return (
     <section className="prof-exp-section">
@@ -16,7 +21,7 @@ const ProfExperience = function () {
 
           <h2>Enkindle Digital SRL</h2>
           <h3>Jan 2018 - Ongoing</h3>
-          <img src="/assets/icons/logo-enkindle.png" alt="enkindle-digital-logo" />
+          <img src={logoEnkindle} alt="enkindle-digital-logo" />
 
         </div>
 
@@ -33,7 +38,7 @@ const ProfExperience = function () {
 
         </div>
 
-        <p className="location container"><span><img src="/assets/icons/location-mark.png" alt="location-mark" /></span> Cluj-Napoca, Romania</p>
+        <p className="location container"><span><img src={locationMark} alt="location-mark" /></span> Cluj-Napoca, Romania</p>
 
       </div>
 
@@ -43,7 +48,7 @@ const ProfExperience = function () {
 
           <h2>Neusoft EDC</h2>
           <h3>Jan 2019 - Oct 2019</h3>
-          <img src="/assets/icons/neusoft-edc-logo.png" alt="neusoft-edc-logo" />
+          <img src={logoNeusoft} alt="neusoft-edc-logo" />
 
         </div>
 
@@ -51,7 +56,6 @@ const ProfExperience = function () {
 
           <h3>1st level IT/EN Support </h3>
           <p>
-
             <strong>Project-based contract:</strong> The Project Scope was aimed to assist an online feedback company with their customer standard onboarding process, as well as to provide efficient and speedy customer support in 5 languages: French, Italian, Spanish, English and German. <br />
             <br />
             <strong>Responsibilities:</strong> <br />
@@ -61,12 +65,11 @@ const ProfExperience = function () {
             -Assisting clients with system setup<br />
             <br />
             <strong>Tools: Jira, Intercom, Zendesk, Outlook, Notepad++, basic HTML/CSS/JS knowledge.</strong>
-
           </p>
 
         </div>
 
-        <p className="location container"><span><img src="/assets/icons/location-mark.png" alt="location-mark" /></span> Cluj-Napoca, Romania</p>
+        <p className="location container"><span><img src={locationMark} alt="location-mark" /></span> Cluj-Napoca, Romania</p>
 
       </div>
 
@@ -76,7 +79,7 @@ const ProfExperience = function () {
 
           <h2>SYKES Enterprises Incorporated</h2>
           <h3>Dec 2016 - Dec 2018</h3>
-          <img src="/assets/icons/sykes-logo-sqblue.png" alt="sykes-logo" />
+          <img src={logoSykes} alt="sykes-logo" />
 
         </div>
 
@@ -93,7 +96,7 @@ const ProfExperience = function () {
 
         </div>
 
-        <p className="location container"><span><img src="/assets/icons/location-mark.png" alt="location-mark" /></span> Cluj-Napoca, Romania</p>
+        <p className="location container"><span><img src={locationMark} alt="location-mark" /></span> Cluj-Napoca, Romania</p>
 
       </div>
 

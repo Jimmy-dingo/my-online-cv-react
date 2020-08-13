@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Portfolio.css';
+
 import ProjectList from './ProjectList';
 import projectsJSON from './portfolio.json';
 import LoadingPage from './LoadingPage';

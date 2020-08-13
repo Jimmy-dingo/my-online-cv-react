@@ -6,10 +6,12 @@ const Form = function () {
 
   const modalSubmission = (
     <div className={`${showModal ? "modal-submission" : "hide"}`}>
+
       <img src="/assets/icons/icon-menu-close.png" onClick={() => setShowModal(!showModal)} />
       <h2>Thank you for contacting me!</h2>
       <p>I will answer to you request as soon as possible</p>
       <img src="/assets/icons/smile.svg" />
+
     </div>
   );
 
@@ -30,7 +32,9 @@ const Form = function () {
     <div className="form-cont container">
 
       <h3>Contact me<br />for more info</h3>
+
       <form className="form" onSubmit={sendEmail}>
+
         <section className="form-in">
 
           <input type="text" className="form-fields" name="name" data-displayname="Name" placeholder="Your name" required />
@@ -41,12 +45,13 @@ const Form = function () {
           <button className="send-btn" type="submit" value="Send">Send</button>
 
         </section>
+
       </form>
 
       {modalSubmission}
 
     </div>
-  )
+  );
 };
 
 export default Form;

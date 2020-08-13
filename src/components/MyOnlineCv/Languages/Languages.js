@@ -1,5 +1,10 @@
 import React from 'react';
 
+import italianFlag from './assets/icons/italian-flag.png';
+import englishFlag from './assets/icons/english-flag.png';
+import spanishFlag from './assets/icons/spanish-flag.png';
+import romanianFlag from './assets/icons/romania-flag.png';
+
 const Languages = function() {
   return (
     <section className="skills-section">
@@ -15,32 +20,32 @@ const Languages = function() {
         <div className="col-3">
 
           <h3>Italian</h3>
-          <img src="/assets/icons/italian-flag.png" alt="italian-flag" />
-          <p>Native</p>
+          <img src={italianFlag} alt="italian-flag" />
+          <p class="level">Native</p>
 
         </div>
 
         <div className="col-3">
 
           <h3>English</h3>
-          <img src="/assets/icons/english-flag.png" alt="english-flag" />
-          <p>Advanced</p>
+          <img src={englishFlag} alt="english-flag" />
+          <p class="level">Advanced</p>
 
         </div>
 
         <div className="col-3">
 
           <h3>Spanish</h3>
-          <img src="/assets/icons/spanish-flag.png" alt="spanish-flag" />
-          <p>Advanced</p>
+          <img src={spanishFlag} alt="spanish-flag" />
+          <p class="level">Advanced</p>
 
         </div>
 
         <div className="col-3">
 
           <h3>Romanian</h3>
-          <img src="/assets/icons/romania-flag.png" alt="romanian-flag" />
-          <p>Medium</p>
+          <img src={romanianFlag} alt="romanian-flag" />
+          <p class="level">Medium</p>
 
         </div>
 

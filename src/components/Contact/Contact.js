@@ -2,6 +2,10 @@ import React from 'react';
 import Form from './Form';
 import './Contact.css';
 
+import likedInIcon from './assets/icons/linked-in-onHover.png';
+import gitHubIcon from './assets/icons/gitHub-onHover.png';
+import locationMark from './assets/icons/location-mark.png';
+
 const Contact = function () {
   return (
     <section className="Contact container-fluid">
@@ -29,15 +33,14 @@ const Contact = function () {
 
           <div>
 
-            <p className="location container"><span><img src="/assets/icons/location-mark.png" alt="location-mark" /></span> Cluj-Napoca, Romania</p>
+            <p className="location container"><span><img src={locationMark} alt="location-mark" /></span> Cluj-Napoca, Romania</p>
 
           </div>
 
           <div className="media-icons">
 
-            <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia-cont" src="/assets/icons/linked-in-onHover.png" alt="linkedIn-icon" /></a>
-            <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia-cont" src="/assets/icons/gitHub-onHover.png" alt="gitHub-icon" /></a>
-
+            <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia-cont" src={likedInIcon} alt="linkedIn-icon" /></a>
+            <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia-cont" src={gitHubIcon} alt="gitHub-icon" /></a>
 
           </div>
 

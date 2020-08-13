@@ -1,7 +1,7 @@
 /**************************************** Headline Styling ***************************************** */
 
 .headline {
-  background-image: url(/assets/images/desktop-background-head-2.jpg);
+  background-image: url(./assets/images/background-head.jpg);
   filter: grayscale(40%) brightness(80%);
   background-position: center;
   width: 100vw;

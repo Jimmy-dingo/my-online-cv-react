@@ -17,7 +17,7 @@ const LoadingPage = function ({ isLoading }) {
 
   if (!isLoading) {
     return true
-  }
+  };
 
   return page;
 };

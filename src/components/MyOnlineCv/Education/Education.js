@@ -1,5 +1,9 @@
 import React from 'react';
 
+import logoSiit from './assets/icons/logo_siit.png';
+import logoUNIPA from './assets/icons/LogoUNIPA.png';
+import locationMark from './assets/icons/location-mark.png';
+
 const Education = function () {
   return (
     <section className="education-section">
@@ -16,7 +20,7 @@ const Education = function () {
 
           <h2>Scoala Informala de IT</h2>
           <h3>Mar 2020 - Ongoing</h3>
-          <img src="/assets/icons/logo_siit.png" alt="scoala-de-it-logo" />
+          <img src={logoSiit} alt="scoala-de-it-logo" />
 
         </div>
 
@@ -32,11 +36,11 @@ const Education = function () {
             <strong>jQuery:</strong> how to include it in a project and how to use it, why it’s helpful, selectors <br />
             <strong>React JS:</strong> how modern JS applications work, React components, props, state, JSX <br />
             <strong>Team project:</strong> built the front-end part of an IMBD-like application (using a provided API), with the following functionalities: CRUD operations on movies, basic search, pagination, registration and login; we’ve used GitHub for code versioning and Asana for the project management part
-                                    </p>
+          </p>
 
         </div>
 
-        <p className="location container"><span><img src="/assets/icons/location-mark.png" alt="location-mark" /></span> Cluj-Napoca, Romania</p>
+        <p className="location container"><span><img src={locationMark} alt="location-mark" /></span> Cluj-Napoca, Romania</p>
 
       </div>
 
@@ -46,7 +50,7 @@ const Education = function () {
 
           <h2>UNIPA - Faculty of Architecture</h2>
           <h3>Oct 2010 - Mar 2016</h3>
-          <img src="/assets/icons/LogoUNIPA.png" alt="unipa-logo" />
+          <img src={logoUNIPA} alt="unipa-logo" />
 
         </div>
 
@@ -59,7 +63,7 @@ const Education = function () {
 
         </div>
 
-        <p className="location container"><span><img src="/assets/icons/location-mark.png" alt="location-mark" /></span> Palermo, Italia</p>
+        <p className="location container"><span><img src={locationMark} alt="location-mark" /></span> Palermo, Italia</p>
 
       </div>
 

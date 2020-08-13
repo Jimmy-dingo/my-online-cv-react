@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Header from './components/Header';
 import About from './components/About';
@@ -9,7 +9,6 @@ import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import logo from './logo.svg';
 import './reset.css';
 import './App.css';
 

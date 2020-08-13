@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import './Header.css';
 
+import linkedInIcon from './assets/icons/linked-in.png';
+import gitHubIcon from './assets/icons/gitHub.png';
+import closedIcon from './assets/icons/icon-menu-close.png';
+import openedIcon from './assets/icons/hamburger-icon-menu-closed.png';
+
 const Header = function () {
-  const closedIcon = '/assets/icons/icon-menu-close.png';
-  const openedIcon = '/assets/icons/hamburger-icon-menu-closed.png';
   const [showMenu, setShowMenu] = useState(false);
   const [easeInAnim, setEaseInAnim] = useState(false);
 
@@ -11,18 +14,22 @@ const Header = function () {
   let mobileMenu;
 
   const mobileNav = (
-    <nav className={`main-nav-mobile ${showMenu ? "mobile-menu-anim" : ""}`}>
+    <nav className={`main-nav-mobile ${showMenu ? "mobile-menu-anim" : null}`}>
 
-      <ul className={`menu-pages ${easeInAnim ? "animated-toggle-icon" : ""}`}>
+      <ul className={`menu-pages ${easeInAnim ? "animated-toggle-icon" : null}`}>
+
         <li><a href="/">About Me</a></li>
         <li><a href="/my-online-cv">My online CV</a></li>
         <li><a href="/portfolio">Portfolio</a></li>
         <li><a href="/contact">Contact</a></li>
+
       </ul>
 
-      <div className={`nav-ico ${showMenu ? "mobile-menu-anim" : ""}`}>
-        <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia" src="/assets/icons/linked-in.png" alt="linkedIn-icon" /></a>
-        <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia" src="/assets/icons/gitHub.png" alt="gitHub-icon" /></a>
+      <div className={`nav-ico ${showMenu ? "mobile-menu-anim" : null}`}>
+
+        <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia" src={linkedInIcon} alt="linkedIn-icon" /></a>
+        <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia" src={gitHubIcon} alt="gitHub-icon" /></a>
+
       </div>
 
       <div className="laser-pointer"></div>
@@ -33,51 +40,49 @@ const Header = function () {
   if (showMenu) {
     hamburger = closedIcon;
     mobileMenu = mobileNav;
-  }
+  };
 
   if (!showMenu) {
     hamburger = openedIcon;
-  }
+  };
 
   return (
-    <>
-      <header className="Header">
+    <header className="Header">
 
-        <nav className="main-nav-desktop container-fluid">
+      <nav className="main-nav-desktop container-fluid">
 
-          <div className='row'>
+        <div className='row'>
 
-            <ul className="menu-pages col-md-9">
+          <ul className="menu-pages col-md-9">
 
-              <li><a href="/">About Me</a></li>
-              <li><a href="/my-online-cv">My online CV</a></li>
-              <li><a href="/portfolio">Portfolio</a></li>
-              <li><a href="/contact">Contact</a></li>
+            <li><a href="/">About Me</a></li>
+            <li><a href="/my-online-cv">My online CV</a></li>
+            <li><a href="/portfolio">Portfolio</a></li>
+            <li><a href="/contact">Contact</a></li>
 
-            </ul>
+          </ul>
 
-            <div className="nav-ico col-md-3">
+          <div className="nav-ico col-md-3">
 
-              <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia" src="/assets/icons/linked-in.png" alt="linkedIn-icon" /></a>
-              <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia" src="/assets/icons/gitHub.png" alt="gitHub-icon" /></a>
-
-            </div>
+            <a href="https://www.linkedin.com/in/gianmarco-procida/" target="_blank"><img className="icon-smedia" src={linkedInIcon} alt="linkedIn-icon" /></a>
+            <a href="https://github.com/Jimmy-dingo" target="_blank"><img className="icon-smedia" src={gitHubIcon} alt="gitHub-icon" /></a>
 
           </div>
 
-        </nav>
-
-        <div className="main-nav-toggle">
-
-          <img src={hamburger} className={`toggle-icon ${easeInAnim ? "animated-toggle-icon" : ""}`} onClick={(e) => { setShowMenu(!showMenu); setEaseInAnim(!easeInAnim) }} />
-          {mobileMenu}
-
         </div>
 
-        <div className="laser-pointer"></div>
+      </nav>
 
-      </header>
-    </>
+      <div className="main-nav-toggle">
+
+        <img src={hamburger} className={`toggle-icon ${easeInAnim ? "animated-toggle-icon" : null}`} onClick={(e) => { setShowMenu(!showMenu); setEaseInAnim(!easeInAnim) }} />
+        {mobileMenu}
+
+      </div>
+
+      <div className="laser-pointer"></div>
+
+    </header>
   );
 };
 
