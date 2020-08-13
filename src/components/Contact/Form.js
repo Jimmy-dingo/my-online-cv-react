@@ -1,16 +1,19 @@
 import React, { useState } from 'react';
 import * as emailjs from 'emailjs-com';
 
+import smile from './assets/icons/smile.svg';
+import closeIcon from './assets/icons/icon-menu-close.png';
+
 const Form = function () {
   const [showModal, setShowModal] = useState(false);
 
   const modalSubmission = (
     <div className={`${showModal ? "modal-submission" : "hide"}`}>
 
-      <img src="/assets/icons/icon-menu-close.png" onClick={() => setShowModal(!showModal)} />
+      <img src={closeIcon} alt="close-icon" onClick={() => setShowModal(!showModal)} />
       <h2>Thank you for contacting me!</h2>
       <p>I will answer to you request as soon as possible</p>
-      <img src="/assets/icons/smile.svg" />
+      <img src={smile} alt="smiley-face"/>
 
     </div>
   );
