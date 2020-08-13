@@ -15,7 +15,7 @@
     "name": "Tic Tac Toe",
     "description": "Old but gold. The famous tic tac toe game made with React",
     "keywords": ["HTML", "CSS", "Javascript", "React"],
-    "url": "https://github.com/Jimmy-dingo/Rock-paper-and-scissors---game",
+    "url": "https://github.com/Jimmy-dingo/Tic-Tac-Toe-game---React.js",
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/tic-tac-toe.png",
     "usedtech": ["HTML", "CSS", "Javascript", "React"],
