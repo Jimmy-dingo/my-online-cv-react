@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollUpButton from "react-scroll-up-button";
 
 import Header from './components/Header';
 import About from './components/About';
@@ -41,6 +42,12 @@ function App() {
             </Route>
 
           </Switch>
+
+          <ScrollUpButton
+          ContainerClassName="scroll-up-container"
+          TransitionClassName="scroll-up-transition"
+          EasingType="easeOutSine"
+        />
 
         </main>
 
