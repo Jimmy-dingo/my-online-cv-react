@@ -1,5 +1,4 @@
 /**************************************** Headline Styling ***************************************** */
-
 .headline {
   background-image: url(./assets/images/background-head.jpg);
   filter: grayscale(40%) brightness(80%);
@@ -101,7 +100,7 @@
 
   .about-me {
     padding-top: 0;
-    height: 800px;
+    min-height: 950px;
   }
 }
 
