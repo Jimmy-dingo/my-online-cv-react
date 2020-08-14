@@ -224,7 +224,7 @@ button {
   }
 
   .left-column {
-    width: 100vw;
+    max-width: 100vw;
     padding-bottom: 40px;
   }
 
@@ -236,7 +236,7 @@ button {
   }
 
   .right-column {
-    height: 650px;
+    max-height: 650px;
   }
 }
 
@@ -246,13 +246,30 @@ button {
   }
 
   .left-column {
-    height: 630px;
+    max-height: 700px;
   }
 
   .left-column h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
+
   .left-column h2 {
-    font-size: 3.6rem;
+    font-size: 3.2rem;
+  }
+
+  .left-column p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+
+  .buttons-cont {
+    max-width: 340px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .buttons-cont button {
+    width: 150px;
   }
 }

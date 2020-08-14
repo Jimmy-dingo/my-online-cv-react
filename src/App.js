@@ -47,6 +47,7 @@ function App() {
           ContainerClassName="scroll-up-container"
           TransitionClassName="scroll-up-transition"
           EasingType="easeOutSine"
+          style={{bottom: '80px', borderRadius: '10px', zIndex: '2000'}}
         />
 
         </main>

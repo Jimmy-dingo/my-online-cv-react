@@ -97,6 +97,10 @@ section {
 }
 
 @media only screen and (max-width: 540px) {
+  .section-title h1 {
+    font-size: 3rem;
+  }
+
   .experience {
     display: flex;
     flex-direction: column;
@@ -119,13 +123,23 @@ section {
   }
 
   .skill-set-lang {
-    width: 370px;
+    max-width: 370px;
     margin-left: -30px !important;
     padding-bottom: 20px;
+  }
+
+  .skill-set-lang h3 {
+    font-size: 1.6rem;
   }
 
   .skill-set-lang p {
     margin-top: 0px;
     padding: 0px 0px 10px 0px;
+    font-size: 1.6rem;
+  }
+
+  .skill-set-lang img {
+    width: 40px;
+    height: auto;
   }
 }

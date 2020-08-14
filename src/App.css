@@ -79,13 +79,14 @@ main {
     min-height: calc(100vh - 185px);
   }
 }
+@media only screen and (max-width: 540px) {
+  .section-title h1 {
+    font-size: 3.6rem;
+  }
+}
 /***************************************************/
 
 /*********** Scroll Up Button Styling ************ */
-.scroll-up-container {
-  border-radius: 10px;
-}
-
 .scroll-up-container > svg {
   background-color: rgba(34, 34, 34, 0.678);
   background-image: linear-gradient(
@@ -102,4 +103,10 @@ main {
 
 .scroll-up-transition {
   right: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .scroll-up-container {
+    bottom: 120px !important;
+  }
 }

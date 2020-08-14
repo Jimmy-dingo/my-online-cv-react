@@ -18,7 +18,7 @@ const Contact = function () {
 
             <h1>Gianmarco Procida</h1>
             <h2>Front-end Developer<br />and Designer</h2>
-            <p>If you like my work, and in general, my style, and you would like to work together in order to complete your company’s visual/online identity, do drop me a line by using the form on the right side of the screen, by sending me an email or feel free to contact me directly via LinkedIn.
+            <p>If you like my work, and in general, my style, and you would like to work together in order to complete your company’s visual/online identity, do drop me a line by using the form on the right side of the screen, by sending me an email or feel free to contact me directly via LinkedIn.<br />
               Looking forward to your messages!
             </p>
 

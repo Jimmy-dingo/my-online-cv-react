@@ -44,4 +44,8 @@
     justify-content: space-between;
     align-items: center;
   }
+
+  .skills-subcat h3 {
+    font-size: 1.6rem;
+  }
 }
