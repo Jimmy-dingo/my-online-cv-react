@@ -60,8 +60,7 @@
 /**************************************** About me section Styling ***************************************** */
 
 .about-me {
-  padding-top: 60px;
-  height: 653px;
+  padding: 50px 0 50px 0;
 }
 
 [alt="my-personal-photo"] {
@@ -97,23 +96,9 @@
     font-weight: 300;
     text-shadow: 0px 0px 10px rgb(92, 92, 92);
   }
-
-  .about-me {
-    padding-top: 0;
-    min-height: 950px;
-  }
 }
 
 @media only screen and (max-width: 540px) {
-  /* .headline {
-    height: 670px;
-  } */
-
-  .about-me {
-    padding-top: 0;
-    min-height: 1050px;
-  }
-
   .headline h1 {
     text-align: center;
     color: white;
