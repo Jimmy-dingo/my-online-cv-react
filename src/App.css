@@ -1,4 +1,8 @@
 /********************************** Root Styling *************************************** */
+.App{
+  overflow-x: hidden;
+}
+
 :root {
   font-size: 10px;
   font-family: "Merriweather", serif;

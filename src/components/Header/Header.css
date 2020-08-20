@@ -124,7 +124,7 @@
     left: 0;
   }
   50% {
-    left: 100%;
+    left: 98%;
   }
 }
 
@@ -211,7 +211,7 @@
   }
 
   .laser-pointer {
-    animation: moveit 5s linear infinite;
+    animation: moveit 4s linear infinite;
   }
 
   @keyframes moveit {
@@ -221,7 +221,7 @@
     }
 
     50% {
-      left: 98%;
+      left: 85%;
     }
   }
 }
