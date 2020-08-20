@@ -24,7 +24,7 @@ const Contact = function () {
 
           </div>
 
-          <div class="buttons-cont container">
+          <div className="buttons-cont container">
 
             <button onClick={() => window.location.href = "/"}>About me</button>
             <button onClick={() => window.location.href = "/my-online-cv"}>My Resumee</button>

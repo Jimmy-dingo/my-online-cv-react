@@ -16,7 +16,6 @@
   justify-content: center;
   align-items: center;
   min-height: calc(100vh - 130px);
-  box-sizing: border-box;
   padding: 50px 15px 50px 15px;
 }
 
@@ -234,10 +233,6 @@ button {
   .left-column h2 {
     font-size: 3.6rem;
   }
-
-  .right-column {
-    max-height: 650px;
-  }
 }
 
 @media only screen and (max-width: 540px) {
@@ -271,5 +266,10 @@ button {
 
   .buttons-cont button {
     width: 150px;
+  }
+
+  .right-column {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
 }
