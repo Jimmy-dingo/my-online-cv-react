@@ -7,8 +7,8 @@ body > div {
   background-image: url(../images/background.jpg);
   filter: grayscale(40%) brightness(80%);
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
 }
 
 .container {
@@ -89,4 +89,28 @@ div:nth-child(3) p {
 
 .pressure {
   grid-area: 2 / 3 / 3 / 4;
+}
+
+@media only screen and (max-width: 540px) {
+  body > div {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 38px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .temp-display {
+    width: 100vw;
+  }
 }
