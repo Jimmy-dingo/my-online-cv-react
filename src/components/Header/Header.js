@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useSpring, animated } from 'react-spring';
 import './Header.css';
 
 import linkedInIcon from './assets/icons/linked-in.png';
@@ -10,11 +11,17 @@ const Header = function () {
   const [showMenu, setShowMenu] = useState(false);
   const [easeInAnim, setEaseInAnim] = useState(false);
 
+  const animateMobileNav = useSpring({
+    from: { height: '0vh', opacity: 0 },
+    to: { height: '100vh', opacity: 1 },
+    config: { duration: 2500 }
+  });
+
   let hamburger;
   let mobileMenu;
 
   const mobileNav = (
-    <nav className={`main-nav-mobile ${showMenu ? "mobile-menu-anim" : null}`}>
+    <animated.nav className="main-nav-mobile" style={animateMobileNav}>
 
       <ul className={`menu-pages ${easeInAnim ? "animated-toggle-icon" : null}`}>
 
@@ -34,7 +41,7 @@ const Header = function () {
 
       <div className="laser-pointer"></div>
 
-    </nav>
+    </animated.nav>
   );
 
   if (showMenu) {

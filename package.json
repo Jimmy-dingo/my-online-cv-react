@@ -2,7 +2,7 @@
   "name": "my-online-cv",
   "version": "0.1.0",
   "private": true,
-  "homepage":"http://procidadev.tech",
+  "homepage": "http://procidadev.tech",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -17,6 +17,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-scroll-up-button": "^1.6.4",
+    "react-spring": "^8.0.27",
     "reset-css": "^5.0.1"
   },
   "scripts": {
