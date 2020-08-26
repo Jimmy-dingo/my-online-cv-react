@@ -8,6 +8,7 @@ import LoadingPage from './LoadingPage';
 const Portfolio = function () {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [projectType, setProjectType] = useState("development");
 
   useEffect(() => {
     const fetchProjects = () => {
@@ -32,12 +33,19 @@ const Portfolio = function () {
 
         </div>
 
-        <div class="container portfolio-wrap site-section">
+          <div className="btn-container">
+            <button className={`portfolio-type-btn ${projectType === "development" ? "active-type" : null}`} onClick={(e)=> setProjectType("development")}>Development</button>
+            <button className={`portfolio-type-btn ${projectType === "web-design" ? "active-type" : null}`} onClick={(e)=> setProjectType("web-design")}>Web Design</button>
+            <button className={`portfolio-type-btn ${projectType === "graphic-design" ? "active-type" : null}`} onClick={(e)=> setProjectType("graphic-design")}>Graphic Design</button>
+          </div>
+          
+        <div className="container portfolio-wrap site-section">
 
-          <div class="row mb-4">
+
+          <div className="row mb-4">
 
             <LoadingPage isLoading={loading} />
-            <ProjectList projects={projects} />
+            <ProjectList projects={projects} type={projectType} />
 
           </div>
 

@@ -8,7 +8,7 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/rock-paper-scissors-game.png",
     "usedtech": ["HTML", "CSS", "Javascript"],
-    "type": "Game"
+    "type": "development"
   },
   {
     "id": "tic-tac-toe",
@@ -19,7 +19,7 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/tic-tac-toe.png",
     "usedtech": ["HTML", "CSS", "Javascript", "React"],
-    "type": "Game"
+    "type": "development"
   },
   {
     "id": "cluj-weather",
@@ -30,7 +30,7 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/wheather-in-cluj.png",
     "usedtech": ["HTML", "CSS", "Javascript"],
-    "type": "Wheather Page"
+    "type": "development"
   },
   {
     "id": "comment-list",
@@ -41,7 +41,7 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/comment-list-page.png",
     "usedtech": ["HTML", "CSS", "Javascript"],
-    "type": "JS Comment List"
+    "type": "development"
   },
   {
     "id": "drum-kit",
@@ -52,7 +52,7 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/drum-kit.png",
     "usedtech": ["HTML", "CSS", "Javascript"],
-    "type": "Interactive Page"
+    "type": "development"
   },
   {
     "id": "jsclock",
@@ -63,7 +63,7 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/JSClock.png",
     "usedtech": ["HTML", "CSS", "Javascript"],
-    "type": "JS Clock"
+    "type": "development"
   },
   {
     "id": "employee-list",
@@ -74,6 +74,39 @@
     "roles": ["Front-end", "Designer"],
     "image": "../assets/images/employee-list.png",
     "usedtech": ["HTML", "CSS", "Javascript"],
-    "type": "App"
+    "type": "development"
+  },
+  {
+    "id": "guest-house-design",
+    "name": "Guest House",
+    "description": "A guest house website designed and realized using illustrator, HTML, CSS and the famous WordPress CMS. An elegant and attractive style that digitalize the guest house's atmosphere.",
+    "keywords": ["HTML", "CSS", "Illustrator", "WordPress"],
+    "url": "https://floraluxuryhouse.com/",
+    "roles": ["Front-end", "Designer"],
+    "image": "../assets/images/flora-webdesign.jpg",
+    "usedtech": ["HTML", "CSS", "Illustrator", "WordPress"],
+    "type": "web-design"
+  },
+  {
+    "id": "training-agency",
+    "name": "Training and Team Building",
+    "description": "An ex soldier contacted me with an amazing idea. Realizing something unique that could represent his ideas wasn't easy, but for sure challenging and satisfactory.",
+    "keywords": ["HTML", "CSS", "Javascript"],
+    "url": "https://tenebris.ro/",
+    "roles": ["Front-end", "Designer"],
+    "image": "../assets/images/tenebris-webdesign.jpg",
+    "usedtech": ["HTML", "CSS", "Illustrator","Photoshop", "WordPress"],
+    "type": "web-design"
+  },
+  {
+    "id": "mentoring-design",
+    "name": "Mentoring Association",
+    "description": "An out-of-the-box design for a mentoring association. Something new and fascinating for the children. Using Illustrator, HTML, CSS and the famous WordPress CMS.",
+    "keywords": ["HTML", "CSS", "WordPress", "Illustrator"],
+    "url": "https://mentor-romania.ro/",
+    "roles": ["Front-end", "Designer"],
+    "image": "../assets/images/mentor-webdesign.jpg",
+    "usedtech": ["HTML", "CSS", "WordPress", "Illustrator"],
+    "type": "web-design"
   }
 ]
