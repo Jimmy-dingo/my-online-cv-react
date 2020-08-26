@@ -93,23 +93,23 @@
   justify-content: space-between;
 }
 
-.buttons-cont button:nth-child(1) {
+.buttons-cont a:nth-child(1) button{
   background-color: var(--key-secondary);
 }
 
-.buttons-cont button:nth-child(1):hover {
+.buttons-cont a:nth-child(1) button:hover {
   border: 2px solid var(--key-color);
   color: var(--key-color);
 }
 
-.buttons-cont button:nth-child(2) {
+.buttons-cont a:nth-child(2) button {
   text-shadow: 0px 0px 200px rgb(92, 92, 92);
   color: #f9f9f9;
   background-color: rgba(0, 0, 0, 0.226);
   border: 2px solid #f9f9f9;
 }
 
-.buttons-cont button:nth-child(2):hover {
+.buttons-cont a:nth-child(2) button:hover {
   background-color: rgba(255, 255, 255, 0.096);
 }
 

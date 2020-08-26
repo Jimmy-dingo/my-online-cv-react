@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
 import myPhoto from './assets/images/about-me-photo.jpg';
 import './About.css';
@@ -13,8 +14,8 @@ const About = function () {
 
         <div>
 
-          <button onClick={() => window.location.href = "/portfolio"}>Portfolio</button>
-          <button onClick={() => window.location.href = "/contact"}>Contact</button>
+          <Link to="/portfolio"><button>Portfolio</button></Link>
+          <Link to="/contact"><button>Contact</button></Link>
 
         </div>
 

@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+
 import Form from './Form';
 import './Contact.css';
 
@@ -26,8 +28,8 @@ const Contact = function () {
 
           <div className="buttons-cont container">
 
-            <button onClick={() => window.location.href = "/"}>About me</button>
-            <button onClick={() => window.location.href = "/my-online-cv"}>My Resumee</button>
+            <Link to="/"><button>About me</button></Link>
+            <Link to="/my-online-cv"><button>My Resumee</button></Link>
 
           </div>
 
