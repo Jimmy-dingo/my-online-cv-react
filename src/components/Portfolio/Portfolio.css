@@ -1,7 +1,10 @@
 .portfolio-wrap {
-  margin-top: -5rem;
   z-index: 2;
   position: relative;
+  border: 2px solid var(--key-color);
+  padding-top: 15px;
+  margin-top: -3px;
+  margin-bottom: 50px;
 }
 
 .portfolio-wrap:before {
@@ -85,4 +88,25 @@
 .tech {
   width: 2rem;
   height: auto;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.portfolio-type-btn {
+  background-color: white;
+  color: var(--font-gray);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.active-type {
+  z-index: 10;
+  border-top: 2px solid var(--key-color);
+  border-left: 2px solid var(--key-color);
+  border-right: 2px solid var(--key-color);
 }
